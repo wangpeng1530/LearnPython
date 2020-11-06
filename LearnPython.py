@@ -236,6 +236,6 @@ a=[1,2,3,4,5]
 if isinstance(a,Iterable):
     print('=============')
 
-new_a=enumerate(a)
+# new_a=enumerate(a)
 
 
