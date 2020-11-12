@@ -1,4 +1,5 @@
-# -- coding: utf-8 --
+# -*- coding: utf-8 -*-
+
 # from PyTest import max
 
 # print max(1,2)
@@ -170,11 +171,11 @@
 #     main()
 # -*- coding: utf-8 -*-
 
-L = [
-    ['Apple', 'Google', 'Microsoft'],
-    ['Java', 'Python', 'Ruby', 'PHP'],
-    ['Adam', 'Bart', 'Lisa']
-]
+# L = [
+#     ['Apple', 'Google', 'Microsoft'],
+#     ['Java', 'Python', 'Ruby', 'PHP'],
+#     ['Adam', 'Bart', 'Lisa']
+# ]
 
 # 打印Apple:
 # print(L[0][0])
@@ -238,4 +239,89 @@ L = [
 
 # new_a=enumerate(a)
 
+# 请定义一个函数quadratic(a, b, c)，接收3个参数，返回一元二次方程 ax^2+bx+c=0
+ 
 
+# 计算平方根可以调用math.sqrt()函数：
+
+
+# import math
+
+# def quadratic(a, b, c=1):
+#     powResult=math.pow(b,2)-4*a*c
+#     print('powResult===============',powResult)
+#     sqreResult=math.sqrt(powResult)
+#     return (-b+sqreResult)/2*a,(-b-sqreResult)/2*a
+
+# a,b=quadratic(c=1,b=3,a=2)
+# print('result============',a,b)
+
+# def testFunc(*param):
+#     print(param,type(param))
+#     for target_list in param:
+#         print('target_list=========',target_list)
+
+# testFunc(1,2,3,'a')
+
+
+
+# def person(name, age, **kw):
+#     print('kw',type(kw))
+#     print('name:', name, 'age:', age, 'other:', kw)
+
+# # person('wang',1)
+
+# from collections.abc import Iterable
+
+# dic={'name1':'wang','sex1':'man'}
+
+# if isinstance(dic,Iterable):
+#     print('can------------你妹')
+
+# person(1,2,**dic)
+# person(name=1,age=2,name1='wang',sex1='man')
+
+# def fun(data1, data2, data3):
+#     print("data1: ", data1)
+#     print("data2: ", data2)
+#     print("data3: ", data3)
+
+# # args = ("one", 2, 3)
+# # fun(*args)
+
+# kwargs = {"data3": "one", "data2": 2, "data1": 3}
+# fun(**kwargs)
+
+# def fact(n):
+#     if n==1:
+#         return 1
+#     n=n - 1
+#     return n * fact(n)
+
+# fact(1000)
+
+# for i, value in enumerate(['A', 'B', 'C']):
+#     print(i, value)
+
+# nums=[1,2,3,4,5,10]
+
+# def findMinAndMax(L):
+#     if L==[]:
+#         return None,None
+#     max=min=L[0]
+#     for value in nums:
+#         if max<value:
+#             max=value
+#         if min>value:
+#             min=value
+#     print('max---'+str(max),'min---'+str(min))
+#     return(max,min)
+
+# a=findMinAndMax(nums)
+# print(type(a))
+
+
+from collections.abc import Iterable
+
+g = (x * x for x in range(10))
+print(type(g),isinstance(g,Iterable))
