@@ -223,18 +223,18 @@ L = [
 
 # myTest(2,b=10)
 
-from collections import Iterable
+# from collections import Iterable
 
 
-a=[1,2,3,4,5]
+# a=[1,2,3,4,5]
 
 # print(a[0:5:2])
 
 # for target_list in expression_list:
 #     pass
 
-if isinstance(a,Iterable):
-    print('=============')
+# if isinstance(a,Iterable):
+    # print('=============')
 
 # new_a=enumerate(a)
 
