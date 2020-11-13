@@ -321,7 +321,20 @@
 # print(type(a))
 
 
-from collections.abc import Iterable
+# from collections.abc import Iterable
 
-g = (x * x for x in range(10))
-print(type(g),isinstance(g,Iterable))
+# g = (x * x for x in range(10))
+# print(type(g),isinstance(g,Iterable))
+
+class TestClass(object):
+    def __init__(self, **kw):
+        self.__myValue=0
+        print(kw,type(kw))
+
+    def __len__(self):
+        return 100
+
+dic={'1':1,'2':2,'3':3,'4':4}
+test=TestClass(**dic)
+# print(test,len(test))
+print(hasattr(test,'_TestClass__myValue'))
